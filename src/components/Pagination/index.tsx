@@ -18,7 +18,7 @@ export function Pagination() {
         direction="row"
         spacing="2"
       >
-        <PaginationItem isCurrent={true} number={1} />
+        <PaginationItem isCurrent number={1} />
         <PaginationItem number={2} />
         <PaginationItem number={3} />
         <PaginationItem number={4} />
