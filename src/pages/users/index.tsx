@@ -5,7 +5,7 @@ import { Sidebar } from "../../components/Sidebar";
 import { Header } from "../../components/Header";
 import { Pagination } from "../../components/Pagination";
 
-export default function userList() {
+export default function UserList() {
   return (
     <Box>
       <Header />
@@ -208,7 +208,7 @@ export default function userList() {
               </Tr>
             </Tbody>
           </Table>
-          
+
           <Pagination />
         </Box>
       </Flex>
