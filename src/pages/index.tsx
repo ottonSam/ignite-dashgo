@@ -1,6 +1,7 @@
-import { Flex, Button, Stack } from '@chakra-ui/react'
+import { Flex, Button, Stack, Box, Divider } from '@chakra-ui/react'
 
 import { Input } from '../components/Form/Input'
+import { Logo } from '../components/Header/Logo'
 
 export default function SingIn() {
   return (
@@ -9,6 +10,7 @@ export default function SingIn() {
       h="100vh"
       align="center"
       justify="center"
+      flexDir="column"
     >
       <Flex
         as="form"
@@ -19,6 +21,13 @@ export default function SingIn() {
         borderRadius={8}
         flexDir="column"
       >
+        <Box mb="3" direction="row">
+          <Logo/>
+          <Divider
+            my="1"
+            borderColor="gray.700"
+          />
+        </Box>
         <Stack spacing="4">
           <Input type="email" name="email" label="E-mail"/>
           <Input type="password" name="password" label="Senha" />
